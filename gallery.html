@@ -1,0 +1,200 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Mateusz Mesek Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>
+                Mateusz Mesek Porfolio<br />
+            </h1>
+            <p>
+                I'm skilled in automation using Python and VBA, CFD and Fluid-Structure Interaction simulations. My personal goal is shape optimization
+                as well as optimization of everyday problems like travel route to minimize the cost of my trips.<a<p>
+
+						<ul class="actions">
+							<li><a href="#" target="_blank" class="button icon solid solo fa-arrow-down scrolly">View Project</a></li>
+						</ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Mateusz Mesek</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mateusz-mesek-3907b2250" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+                <li><a href="https://github.com/mateusz-l-mesek" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+
+                    <h2>
+                        <a href="#">
+                            ANSYS MESHING<br />
+                        </a>
+                    </h2>
+                    <p>
+                        The geometry was divided into 3 major parts: <br />
+                        1) Inlet + segment with larger diameter without helical elements <br />
+                        2) Pipe with the helical inserts <br />
+                        3) Outlet segment without helical inserts + outlet <br />
+                    </p>
+                </header>
+                <a href="gallery.html" class="image main"><img src="images/pipe.png" alt="" /></a>
+
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+
+                        <h2>
+                            <a href="#">
+                                Front view in ANSYS Fluent - inlet POV<br />
+                            </a>
+                        </h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pipe1.png" alt="" /></a>
+                    <p>
+                        The inlet + short segment without inserts had following quality:<br />
+                        Orthogonal quality: <br />
+                        Min = 0.55 <br />
+                        Avg = 0.95 <br />
+                        Skewness: <br />
+                        Max = 0.52 <br />
+                        Avg = 0.15 <br />
+                    </p>
+
+                </article>
+                <article>
+                    <header>
+                        <h2>
+                            <a href="#">
+                                ANSYS Meshing view<br />
+                            </a>
+                        </h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pipe_mesh.png" alt="" /></a>
+                    <p>
+                       Since the geometry was sliced into fragements it resulted in a non-conformal mesh. For better alignment of the corresponding nodes between two meshes at the interface
+                        the geometry was sliced into more elements.
+                    </p>
+
+                </article>
+                <article>
+                    <header>
+                        <h2>
+                            <a href="#">
+                                Pipe with helical inserts<br />
+                            </a>
+                        </h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pipe_meshing.png" alt="" /></a>
+                    <p>
+                        The pipe with helical inserts had following quality:<br />
+                        Orthogonal quality: <br />
+                        Min = 0.32 <br />
+                        Avg = 0.73 <br />
+                        Skewness: <br />
+                        Max = 0.69 <br />
+                        Avg = 0.12 <br />
+                    </p>
+
+                </article>
+
+                <article>
+                    <header>
+                        <h2>
+                            <a href="#">
+                                Pipe - side view<br />
+                            </a>
+                        </h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pipe_meshing_side.png" alt="" /></a>
+                    <p>
+                        Sweeping the mesh in the direction of the insert required slicing the fluid geometry into even more piecies to achieve good mesh quality.
+                        Each pipe segment with one helical segement was treated as a one part consisting of 6 bodies. At the end an interface had to be defined between
+                        each faces to allow data transfer or "fluid to flow between neighbouring parts" in Fluent.
+                    </p>
+
+                </article>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="pagination">
+                    <!--<a href="#" class="previous">Prev</a>-->
+                    <a href="#" class="page active">1</a>
+                    <span class="extra">&hellip;</span>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="next">Next</a>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>
+                        Kraków, Poland<br />
+                    </p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/mateusz-mesek-3907b2250" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+                        <li><a href="https://github.com/mateusz-l-mesek" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

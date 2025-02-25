@@ -48,14 +48,42 @@
 				<!-- Main -->
 					<div id="main">
 
+
+
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/mateusz-l-mesek/Inventor-API">Inventor automation<br />
-									</a></h2>
-									<p>In this project I automate 3D geometry modeling with Inventor API and Python. I focus on cyclone
-										separator and static mixer. The geometry could be meshed using ANSA API and together with pyANSYS used for geometry optimization.
+						<article class="post featured">
+							<header class="major">
+								
+								<h2>
+									<a href="https://github.com/mateusz-l-mesek/Salome_FEBio_Automation_Workflow">
+										Geometry, meshing and simulation case file automation<br />
+									</a>
+								</h2>
+								<p>
+									Generating geometry and mesh over and over again can be time consuming. To save some time I created a demo to automate the entire processs including simulation case file definition. The case here is a whole
+									cylinder with a fixed support on one end and force applied on the opposite end.
+									The geometry and its meshing were automated using Salome API and Python. The tetrahedral mesh information in .mesh file was processed and used to generate FEBio input file to run the simulations.
+								</p>
+							</header>
+							<a href="https://github.com/mateusz-l-mesek/Salome_FEBio_Automation_Workflow" class="image main"><img src="images/febio.PNG" alt="" /></a>
+							<ul class="actions special">
+								<li><a href="https://github.com/mateusz-l-mesek/Salome_FEBio_Automation_Workflow" class="button large">Full Story</a></li>
+							</ul>
+						</article>
+
+						<!-- Posts -->
+						<section class="posts">
+							<article>
+								<header>
+
+									<h2>
+										<a href="https://github.com/mateusz-l-mesek/Inventor-API">
+											Inventor automation<br />
+										</a>
+									</h2>
+									<p>
+										In this project I automate 3D geometry modeling with Inventor API and Python. I focus on cyclone
+										separator and static mixer. The geometry could be meshed with ANSA API and together with pyANSYS used for geometry optimization.
 									</p>
 								</header>
 								<a href="https://github.com/mateusz-l-mesek/Inventor-API" class="image main"><img src="images/combine.png" alt="" /></a>
@@ -63,17 +91,38 @@
 									<li><a href="https://github.com/mateusz-l-mesek/Inventor-API" class="button large">View Project</a></li>
 								</ul>
 							</article>
-
-						<!-- Posts -->
-							<section class="posts">
 								<article>
 									<header>
-										
-										<h2><a href="https://github.com/mateusz-l-mesek/cellular_automata">The Game of Life<br />
-										</a></h2>
+
+										<h2>
+											<a href="gallery.html">
+												ANSYS MESHING<br />
+											</a>
+										</h2>
+										<p>
+											3D hexahedral mesh of Kenics helical static mixer from my Master's thesis. For multiphase simulation combined with Population Balance
+											Equation tetrahedral mesh had too poor quality. Achieving hex mesh in ANSYS Meshing required a lot of iterations and planning how to divide
+											the geometry at the 1st step - modelling in CAD.
+										</p>
+									</header>
+									<a href="gallery.html" class="image main"><img src="images/pipe.png" alt="" /></a>
+									<ul class="actions special">
+										<li><a href="gallery.html" class="button large">View Project</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+
+										<h2>
+											<a href="https://github.com/mateusz-l-mesek/cellular_automata">
+												The Game of Life<br />
+											</a>
+										</h2>
 									</header>
 									<a href="https://github.com/mateusz-l-mesek/cellular_automata" class="image fit"><img src="images/CA.PNG" alt="" /></a>
-									<p>Implementation of a 2D population growth simulation. I used a GPU to accelerate the simulations and analyzed its performance 
+									<p>
+										Implementation of a 2D population growth simulation. I used a GPU to accelerate the simulations and analyzed its performance
 										by comparing it to the CPU simulation time. For 25 million cells the GPU solution time is twice faster than the 1 core CPU simulation for 25 thousand cells.
 									</p>
 									<ul class="actions special">
@@ -82,8 +131,11 @@
 								</article>
 								<article>
 									<header>
-										<h2><a href="https://github.com/mateusz-l-mesek/Optimization/tree/main">Optimization<br />
-										</a></h2>
+										<h2>
+											<a href="https://github.com/mateusz-l-mesek/Optimization/tree/main">
+												Optimization<br />
+											</a>
+										</h2>
 									</header>
 									<a href="https://github.com/mateusz-l-mesek/Optimization/tree/main" class="image fit"><img src="images/optimization.jpg" alt="" /></a>
 									<p>Here I'm just learning the OR-tools provided by Google, and optimization in general for future problems.</p>
@@ -91,21 +143,22 @@
 										<li><a href="https://github.com/mateusz-l-mesek/Optimization/tree/main" class="button">View Project</a></li>
 									</ul>
 								</article>
-						
+
+
 							</section>
 
-						<!-- Footer -->
+							<!-- Footer -->
 							<footer>
 								<div class="pagination">
 									<!--<a href="#" class="previous">Prev</a>-->
 									<a href="#" class="page active">1</a>
 									<span class="extra">&hellip;</span>
-									<a href="#" class="page">2</a>									
+									<a href="#" class="page">2</a>
 									<a href="#" class="next">Next</a>
 								</div>
 							</footer>
 
-					</div>
+</div>
 
 				<!-- Footer -->
 					<footer id="footer">
